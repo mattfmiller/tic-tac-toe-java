@@ -146,4 +146,5 @@ public class GameTest {
         Character expected = 'O';
         assertEquals(expected, testGame.getPlayer());
     }
+
 }
