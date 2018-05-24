@@ -181,4 +181,13 @@ public class GameTest {
         Game testGame = new Game();
         assertTrue(testGame.checkInput("1"));
     }
+
+    @Test
+    public void duplicateEntry_checkForDuplicateEntry_true() {
+        Game testGame = new Game();
+        testGame.playerTurn("4");
+        assertTrue(testGame.checkForDuplicate("4"));
+    }
+
+
 }

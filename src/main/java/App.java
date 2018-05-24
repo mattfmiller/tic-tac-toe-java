@@ -17,6 +17,16 @@ public class App {
             try {
                 System.out.println(game.getPlayer() +"'s turn. Please enter the number corresponding to the space that you would like to play.");
                 String userInput = bufferedReader.readLine();
+                Boolean invalidInput = true;
+                while(invalidInput) {
+                    if (game.checkInput(userInput)) {
+                        invalidInput = false;
+                    } else {
+                        System.out.println("Invalid input. Please try again");
+                        userInput = bufferedReader.readLine();
+                    }
+                }
+
                 game.playerTurn(userInput);
                 game.switchPlayer();
                 if(game.checkWin() != ' ') {
