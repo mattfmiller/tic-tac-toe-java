@@ -38,7 +38,6 @@ public class GameTest {
         Game testGame = new Game();
         char expected = 'O';
         assertEquals(expected, testGame.player1turn("1"));
-
     }
 
     @Test
@@ -46,7 +45,6 @@ public class GameTest {
         Game testGame = new Game();
         char expected = 'O';
         assertEquals(expected, testGame.player1turn("2"));
-
     }
 
     @Test
@@ -54,7 +52,6 @@ public class GameTest {
         Game testGame = new Game();
         char expected = 'O';
         assertEquals(expected, testGame.player1turn("3"));
-
     }
 
     @Test
@@ -62,7 +59,6 @@ public class GameTest {
         Game testGame = new Game();
         char expected = 'O';
         assertEquals(expected, testGame.player1turn("4"));
-
     }
 
     @Test
@@ -70,6 +66,12 @@ public class GameTest {
         Game testGame = new Game();
         char expected = 'O';
         assertEquals(expected, testGame.player1turn("5"));
+    }
 
+    @Test
+    public void player1turn_drawOonBoard6_O() {
+        Game testGame = new Game();
+        char expected = 'O';
+        assertEquals(expected, testGame.player1turn("6"));
     }
 }
