@@ -45,6 +45,6 @@ public class Game {
     }
 
     public Character getPlayer1() {
-        return null;
+        return player1;
     }
 }
