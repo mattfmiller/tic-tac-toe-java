@@ -15,15 +15,9 @@ public class GameTest {
     }
 
     @Test
-    public void newGame_getsPlayer1_true() {
+    public void newGame_getsPlayer_true() {
         Game testGame = new Game();
-        assertTrue(testGame.getPlayer1() instanceof Character);
-    }
-
-    @Test
-    public void newGame_getsPlayer2_true() {
-        Game testGame = new Game();
-        assertTrue(testGame.getPlayer2() instanceof Character);
+        assertTrue(testGame.getPlayer() instanceof Character);
     }
 
     @Test
@@ -34,218 +28,225 @@ public class GameTest {
     }
 
     @Test
-    public void player1turn_drawOonBoard1_O() {
+    public void playerTurn_drawOonBoard1_O() {
         Game testGame = new Game();
-        testGame.player1turn("1");
-        Character expected = 'O';
+        testGame.playerTurn("1");
+        Character expected = 'X';
         assertEquals(expected, testGame.getBoard().get(1));
     }
 
     @Test
-    public void player1turn_drawOonBoard2_O() {
+    public void playerTurn_drawOonBoard2_O() {
         Game testGame = new Game();
-        testGame.player1turn("2");
-        Character expected = 'O';
+        testGame.playerTurn("2");
+        Character expected = 'X';
         assertEquals(expected, testGame.getBoard().get(3));
     }
 
     @Test
-    public void player1turn_drawOonBoard3_O() {
+    public void playerTurn_drawOonBoard3_O() {
         Game testGame = new Game();
-        testGame.player1turn("3");
-        Character expected = 'O';
+        testGame.playerTurn("3");
+        Character expected = 'X';
         assertEquals(expected, testGame.getBoard().get(5));
     }
 
     @Test
-    public void player1turn_drawOonBoard4_O() {
+    public void playerTurn_drawOonBoard4_O() {
         Game testGame = new Game();
-        testGame.player1turn("4");
-        Character expected = 'O';
+        testGame.playerTurn("4");
+        Character expected = 'X';
         assertEquals(expected, testGame.getBoard().get(13));
     }
 
     @Test
-    public void player1turn_drawOonBoard5_O() {
+    public void playerTurn_drawOonBoard5_O() {
         Game testGame = new Game();
-        testGame.player1turn("5");
-        Character expected = 'O';
+        testGame.playerTurn("5");
+        Character expected = 'X';
         assertEquals(expected, testGame.getBoard().get(15));
     }
 
     @Test
-    public void player1turn_drawOonBoard6_O() {
+    public void playerTurn_drawOonBoard6_O() {
         Game testGame = new Game();
-        testGame.player1turn("6");
-        Character expected = 'O';
+        testGame.playerTurn("6");
+        Character expected = 'X';
         assertEquals(expected, testGame.getBoard().get(17));
     }
 
     @Test
-    public void player1turn_drawOonBoard7_O() {
+    public void playerTurn_drawOonBoard7_O() {
         Game testGame = new Game();
-        testGame.player1turn("7");
-        Character expected = 'O';
+        testGame.playerTurn("7");
+        Character expected = 'X';
         assertEquals(expected, testGame.getBoard().get(25));
     }
 
     @Test
-    public void player1turn_drawOonBoard8_O() {
+    public void playerTurn_drawOonBoard8_O() {
         Game testGame = new Game();
-        testGame.player1turn("8");
-        Character expected = 'O';
+        testGame.playerTurn("8");
+        Character expected = 'X';
         assertEquals(expected, testGame.getBoard().get(27));
     }
 
     @Test
-    public void player1turn_drawOonBoard9_O() {
+    public void playerTurn_drawOonBoard9_O() {
         Game testGame = new Game();
-        testGame.player1turn("9");
-        Character expected = 'O';
+        testGame.playerTurn("9");
+        Character expected = 'X';
         assertEquals(expected, testGame.getBoard().get(29));
     }
 
-    @Test
-    public void player2turn_drawOonBoard1_X() {
-        Game testGame = new Game();
-        char expected = 'X';
-        assertEquals(expected, testGame.player2turn("1"));
-    }
-
-    @Test
-    public void player2turn_drawOonBoard2_X() {
-        Game testGame = new Game();
-        char expected = 'X';
-        assertEquals(expected, testGame.player2turn("2"));
-    }
-
-    @Test
-    public void player2turn_drawOonBoard3_X() {
-        Game testGame = new Game();
-        char expected = 'X';
-        assertEquals(expected, testGame.player2turn("3"));
-    }
-
-    @Test
-    public void player2turn_drawOonBoard4_X() {
-        Game testGame = new Game();
-        char expected = 'X';
-        assertEquals(expected, testGame.player2turn("4"));
-    }
-
-    @Test
-    public void player2turn_drawOonBoard5_X() {
-        Game testGame = new Game();
-        char expected = 'X';
-        assertEquals(expected, testGame.player2turn("5"));
-    }
-
-    @Test
-    public void player2turn_drawOonBoard6_X() {
-        Game testGame = new Game();
-        char expected = 'X';
-        assertEquals(expected, testGame.player2turn("6"));
-    }
-
-    @Test
-    public void player2turn_drawOonBoard7_X() {
-        Game testGame = new Game();
-        char expected = 'X';
-        assertEquals(expected, testGame.player2turn("7"));
-    }
-
-    @Test
-    public void player2turn_drawOonBoard8_X() {
-        Game testGame = new Game();
-        char expected = 'X';
-        assertEquals(expected, testGame.player2turn("8"));
-    }
-
-    @Test
-    public void player2turn_drawOonBoard9_X() {
-        Game testGame = new Game();
-        char expected = 'X';
-        assertEquals(expected, testGame.player2turn("9"));
-    }
+//    @Test
+//    public void player2turn_drawOonBoard1_X() {
+//        Game testGame = new Game();
+//        char expected = 'X';
+//        assertEquals(expected, testGame.player2turn("1"));
+//    }
+//
+//    @Test
+//    public void player2turn_drawOonBoard2_X() {
+//        Game testGame = new Game();
+//        char expected = 'X';
+//        assertEquals(expected, testGame.player2turn("2"));
+//    }
+//
+//    @Test
+//    public void player2turn_drawOonBoard3_X() {
+//        Game testGame = new Game();
+//        char expected = 'X';
+//        assertEquals(expected, testGame.player2turn("3"));
+//    }
+//
+//    @Test
+//    public void player2turn_drawOonBoard4_X() {
+//        Game testGame = new Game();
+//        char expected = 'X';
+//        assertEquals(expected, testGame.player2turn("4"));
+//    }
+//
+//    @Test
+//    public void player2turn_drawOonBoard5_X() {
+//        Game testGame = new Game();
+//        char expected = 'X';
+//        assertEquals(expected, testGame.player2turn("5"));
+//    }
+//
+//    @Test
+//    public void player2turn_drawOonBoard6_X() {
+//        Game testGame = new Game();
+//        char expected = 'X';
+//        assertEquals(expected, testGame.player2turn("6"));
+//    }
+//
+//    @Test
+//    public void player2turn_drawOonBoard7_X() {
+//        Game testGame = new Game();
+//        char expected = 'X';
+//        assertEquals(expected, testGame.player2turn("7"));
+//    }
+//
+//    @Test
+//    public void player2turn_drawOonBoard8_X() {
+//        Game testGame = new Game();
+//        char expected = 'X';
+//        assertEquals(expected, testGame.player2turn("8"));
+//    }
+//
+//    @Test
+//    public void player2turn_drawOonBoard9_X() {
+//        Game testGame = new Game();
+//        char expected = 'X';
+//        assertEquals(expected, testGame.player2turn("9"));
+//    }
 
     @Test
     public void checkWin_forWinOnTopRow_O() {
         Game testGame = new Game();
-        testGame.player1turn("1");
-        testGame.player1turn("2");
-        testGame.player1turn("3");
-        Character expected = 'O';
+        testGame.playerTurn("1");
+        testGame.playerTurn("2");
+        testGame.playerTurn("3");
+        Character expected = 'X';
         assertEquals(expected, testGame.checkWin());
     }
 
     @Test
     public void checkWin_forWinOnMiddleRow_O() {
         Game testGame = new Game();
-        testGame.player1turn("4");
-        testGame.player1turn("5");
-        testGame.player1turn("6");
-        Character expected = 'O';
+        testGame.playerTurn("4");
+        testGame.playerTurn("5");
+        testGame.playerTurn("6");
+        Character expected = 'X';
         assertEquals(expected, testGame.checkWin());
     }
 
     @Test
     public void checkWin_forWinOnBottomRow_O() {
         Game testGame = new Game();
-        testGame.player1turn("7");
-        testGame.player1turn("8");
-        testGame.player1turn("9");
-        Character expected = 'O';
+        testGame.playerTurn("7");
+        testGame.playerTurn("8");
+        testGame.playerTurn("9");
+        Character expected = 'X';
         assertEquals(expected, testGame.checkWin());
     }
 
     @Test
     public void checkWin_forWinOnFirstColumn_O() {
         Game testGame = new Game();
-        testGame.player1turn("1");
-        testGame.player1turn("4");
-        testGame.player1turn("7");
-        Character expected = 'O';
+        testGame.playerTurn("1");
+        testGame.playerTurn("4");
+        testGame.playerTurn("7");
+        Character expected = 'X';
         assertEquals(expected, testGame.checkWin());
     }
 
     @Test
     public void checkWin_forWinOnSecondColumn_O() {
         Game testGame = new Game();
-        testGame.player1turn("2");
-        testGame.player1turn("5");
-        testGame.player1turn("8");
-        Character expected = 'O';
+        testGame.playerTurn("2");
+        testGame.playerTurn("5");
+        testGame.playerTurn("8");
+        Character expected = 'X';
         assertEquals(expected, testGame.checkWin());
     }
 
     @Test
     public void checkWin_forWinOnThirdColumn_O() {
         Game testGame = new Game();
-        testGame.player1turn("3");
-        testGame.player1turn("6");
-        testGame.player1turn("9");
-        Character expected = 'O';
+        testGame.playerTurn("3");
+        testGame.playerTurn("6");
+        testGame.playerTurn("9");
+        Character expected = 'X';
         assertEquals(expected, testGame.checkWin());
     }
 
     @Test
     public void checkWin_forWinOnFirstDiagonal_O() {
         Game testGame = new Game();
-        testGame.player1turn("1");
-        testGame.player1turn("5");
-        testGame.player1turn("9");
-        Character expected = 'O';
+        testGame.playerTurn("1");
+        testGame.playerTurn("5");
+        testGame.playerTurn("9");
+        Character expected = 'X';
         assertEquals(expected, testGame.checkWin());
     }
 
     @Test
     public void checkWin_forWinOnSecondDiagonal_O() {
         Game testGame = new Game();
-        testGame.player1turn("3");
-        testGame.player1turn("5");
-        testGame.player1turn("7");
-        Character expected = 'O';
+        testGame.playerTurn("3");
+        testGame.playerTurn("5");
+        testGame.playerTurn("7");
+        Character expected = 'X';
         assertEquals(expected, testGame.checkWin());
     }
 
+    @Test
+    public void setPlayer_switchCurrentPlayer_O() {
+        Game testGame = new Game();
+        testGame.setPlayer();
+        Character expected = 'O';
+        assertEquals(expected, testGame.getPlayer());
+    }
 }

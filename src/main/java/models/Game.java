@@ -4,13 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Game {
-    private char player1;
-    private char player2;
+    private char player;
     private Map<Integer, Character> board;
 
     public Game (){
-        this.player1 = 'O';
-        this.player2 = 'X';
+        this.player = 'X';
         this.board = new HashMap<Integer, Character>();
         board.put(1, '1');
         board.put(2, '|');
@@ -44,42 +42,38 @@ public class Game {
         board.put(30, '\n');
     }
 
-    public Character getPlayer1() {
-        return player1;
-    }
-
-    public Character getPlayer2() {
-        return player2;
+    public Character getPlayer() {
+        return player;
     }
 
     public Map<Integer,Character> getBoard() {
         return board;
     }
 
-    public  void player1turn(String playerSelection){
+    public  void playerTurn(String playerSelection){
         if(playerSelection.equals("1")){
-            board.put(1, 'O');
+            board.put(1, player);
         } else if(playerSelection.equals("2")){
-            board.put(3, 'O');
+            board.put(3, player);
         } else if(playerSelection.equals("3")) {
-            board.put(5, 'O');
+            board.put(5, player);
         } else if(playerSelection.equals("4")) {
-            board.put(13, 'O');
+            board.put(13, player);
 
         } else if(playerSelection.equals("5")) {
-            board.put(15, 'O');
+            board.put(15, player);
 
         } else if(playerSelection.equals("6")) {
-            board.put(17, 'O');
+            board.put(17, player);
 
         } else if(playerSelection.equals("7")) {
-            board.put(25, 'O');
+            board.put(25, player);
 
         } else if(playerSelection.equals("8")) {
-            board.put(27, 'O');
+            board.put(27, player);
 
         } else if(playerSelection.equals("9")) {
-            board.put(29, 'O');
+            board.put(29, player);
 
         } else {
         }
@@ -136,6 +130,14 @@ public class Game {
             return board.get(15);
         } else  {
             return ' ';
+        }
+    }
+
+    public void setPlayer() {
+        if (player == 'X') {
+            player = ' ';
+        } else {
+            player = ' ';
         }
     }
 
