@@ -99,91 +99,8 @@ public class GameTest {
         assertEquals(expected, testGame.getBoard().get(29));
     }
 
-//    @Test
-//    public void player2turn_drawOonBoard1_X() {
-//        Game testGame = new Game();
-//        char expected = 'X';
-//        assertEquals(expected, testGame.player2turn("1"));
-//    }
-//
-//    @Test
-//    public void player2turn_drawOonBoard2_X() {
-//        Game testGame = new Game();
-//        char expected = 'X';
-//        assertEquals(expected, testGame.player2turn("2"));
-//    }
-//
-//    @Test
-//    public void player2turn_drawOonBoard3_X() {
-//        Game testGame = new Game();
-//        char expected = 'X';
-//        assertEquals(expected, testGame.player2turn("3"));
-//    }
-//
-//    @Test
-//    public void player2turn_drawOonBoard4_X() {
-//        Game testGame = new Game();
-//        char expected = 'X';
-//        assertEquals(expected, testGame.player2turn("4"));
-//    }
-//
-//    @Test
-//    public void player2turn_drawOonBoard5_X() {
-//        Game testGame = new Game();
-//        char expected = 'X';
-//        assertEquals(expected, testGame.player2turn("5"));
-//    }
-//
-//    @Test
-//    public void player2turn_drawOonBoard6_X() {
-//        Game testGame = new Game();
-//        char expected = 'X';
-//        assertEquals(expected, testGame.player2turn("6"));
-//    }
-//
-//    @Test
-//    public void player2turn_drawOonBoard7_X() {
-//        Game testGame = new Game();
-//        char expected = 'X';
-//        assertEquals(expected, testGame.player2turn("7"));
-//    }
-//
-//    @Test
-//    public void player2turn_drawOonBoard8_X() {
-//        Game testGame = new Game();
-//        char expected = 'X';
-//        assertEquals(expected, testGame.player2turn("8"));
-//    }
-//
-//    @Test
-//    public void player2turn_drawOonBoard9_X() {
-//        Game testGame = new Game();
-//        char expected = 'X';
-//        assertEquals(expected, testGame.player2turn("9"));
-//    }
-
     @Test
-    public void checkWin_forWinOnTopRow_O() {
-        Game testGame = new Game();
-        testGame.playerTurn("1");
-        testGame.playerTurn("2");
-        testGame.playerTurn("3");
-        Character expected = 'X';
-        assertEquals(expected, testGame.checkWin());
-    }
-
-    @Test
-    public void checkWin_forWinOnMiddleRow_O() {
-        Game testGame = new Game();
-        testGame.playerTurn("4");
-        testGame.playerTurn("5");
-        testGame.playerTurn("6");
-        Character expected = 'X';
-        assertEquals(expected, testGame.checkWin());
-    }
-
-    @Test
-    public void checkWin_forWinOnBottomRow_O() {
+    public void checkWin_forWinOnRow_X() {
         Game testGame = new Game();
         testGame.playerTurn("7");
         testGame.playerTurn("8");
@@ -193,27 +110,7 @@ public class GameTest {
     }
 
     @Test
-    public void checkWin_forWinOnFirstColumn_O() {
-        Game testGame = new Game();
-        testGame.playerTurn("1");
-        testGame.playerTurn("4");
-        testGame.playerTurn("7");
-        Character expected = 'X';
-        assertEquals(expected, testGame.checkWin());
-    }
-
-    @Test
-    public void checkWin_forWinOnSecondColumn_O() {
-        Game testGame = new Game();
-        testGame.playerTurn("2");
-        testGame.playerTurn("5");
-        testGame.playerTurn("8");
-        Character expected = 'X';
-        assertEquals(expected, testGame.checkWin());
-    }
-
-    @Test
-    public void checkWin_forWinOnThirdColumn_O() {
+    public void checkWin_forWinOnColumn_X() {
         Game testGame = new Game();
         testGame.playerTurn("3");
         testGame.playerTurn("6");
@@ -223,7 +120,7 @@ public class GameTest {
     }
 
     @Test
-    public void checkWin_forWinOnFirstDiagonal_O() {
+    public void checkWin_forWinOnFirstDiagonal_X() {
         Game testGame = new Game();
         testGame.playerTurn("1");
         testGame.playerTurn("5");
@@ -233,7 +130,7 @@ public class GameTest {
     }
 
     @Test
-    public void checkWin_forWinOnSecondDiagonal_O() {
+    public void checkWin_forWinOnSecondDiagonal_X() {
         Game testGame = new Game();
         testGame.playerTurn("3");
         testGame.playerTurn("5");
@@ -243,9 +140,9 @@ public class GameTest {
     }
 
     @Test
-    public void setPlayer_switchCurrentPlayer_O() {
+    public void switchPlayer_switchCurrentPlayer_O() {
         Game testGame = new Game();
-        testGame.setPlayer();
+        testGame.switchPlayer();
         Character expected = 'O';
         assertEquals(expected, testGame.getPlayer());
     }
