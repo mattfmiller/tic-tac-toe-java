@@ -113,7 +113,7 @@ public class Game {
 
     public Boolean checkDraw() {
         if(turn >= 9){
-            return null;
+            return true;
         } else {
             return false;
         }
