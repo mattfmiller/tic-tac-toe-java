@@ -121,4 +121,12 @@ public class Game {
             return ' ';
         }
     }
+    public Character checkWin(){
+        if(board.get(1) == board.get(3) && board.get(5) == board.get(3)){
+            return ' ';
+        } else {
+            return ' ';
+        }
+    }
+
 }

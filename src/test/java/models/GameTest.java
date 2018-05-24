@@ -158,4 +158,14 @@ public class GameTest {
         char expected = 'X';
         assertEquals(expected, testGame.player2turn("9"));
     }
+
+    @Test
+    public void checkWin_forWin_true() {
+        Game testGame = new Game();
+        testGame.player1turn("1");
+        testGame.player1turn("2");
+        testGame.player1turn("3");
+        Character expected = 'O';
+        assertEquals(expected, testGame.checkWin());
+    }
 }
