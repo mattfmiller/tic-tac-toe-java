@@ -36,64 +36,73 @@ public class GameTest {
     @Test
     public void player1turn_drawOonBoard1_O() {
         Game testGame = new Game();
-        char expected = 'O';
-        assertEquals(expected, testGame.player1turn("1"));
+        testGame.player1turn("1");
+        Character expected = 'O';
+        assertEquals(expected, testGame.getBoard().get(1));
     }
 
     @Test
     public void player1turn_drawOonBoard2_O() {
         Game testGame = new Game();
-        char expected = 'O';
-        assertEquals(expected, testGame.player1turn("2"));
+        testGame.player1turn("2");
+        Character expected = 'O';
+        assertEquals(expected, testGame.getBoard().get(3));
     }
 
     @Test
     public void player1turn_drawOonBoard3_O() {
         Game testGame = new Game();
-        char expected = 'O';
-        assertEquals(expected, testGame.player1turn("3"));
+        testGame.player1turn("3");
+        Character expected = 'O';
+        assertEquals(expected, testGame.getBoard().get(5));
     }
 
     @Test
     public void player1turn_drawOonBoard4_O() {
         Game testGame = new Game();
-        char expected = 'O';
-        assertEquals(expected, testGame.player1turn("4"));
+        testGame.player1turn("4");
+        Character expected = 'O';
+        assertEquals(expected, testGame.getBoard().get(13));
     }
 
     @Test
     public void player1turn_drawOonBoard5_O() {
         Game testGame = new Game();
-        char expected = 'O';
-        assertEquals(expected, testGame.player1turn("5"));
+        testGame.player1turn("5");
+        Character expected = 'O';
+        assertEquals(expected, testGame.getBoard().get(15));
     }
 
     @Test
     public void player1turn_drawOonBoard6_O() {
         Game testGame = new Game();
-        char expected = 'O';
-        assertEquals(expected, testGame.player1turn("6"));
+        testGame.player1turn("6");
+        Character expected = 'O';
+        assertEquals(expected, testGame.getBoard().get(17));
     }
 
     @Test
     public void player1turn_drawOonBoard7_O() {
         Game testGame = new Game();
-        char expected = 'O';
-        assertEquals(expected, testGame.player1turn("7"));
+        testGame.player1turn("7");
+        Character expected = 'O';
+        assertEquals(expected, testGame.getBoard().get(25));
     }
 
     @Test
     public void player1turn_drawOonBoard8_O() {
         Game testGame = new Game();
-        char expected = 'O';
-        assertEquals(expected, testGame.player1turn("8"));
+        testGame.player1turn("8");
+        Character expected = 'O';
+        assertEquals(expected, testGame.getBoard().get(27));
     }
 
     @Test
     public void player1turn_drawOonBoard9_O() {
         Game testGame = new Game();
-        char expected = 'O';
-        assertEquals(expected, testGame.player1turn("9"));
+        testGame.player1turn("9");
+        Character expected = 'O';
+        assertEquals(expected, testGame.getBoard().get(29));
     }
 
     @Test

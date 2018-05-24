@@ -56,36 +56,32 @@ public class Game {
         return board;
     }
 
-    public  char player1turn(String playerSelection){
+    public  void player1turn(String playerSelection){
         if(playerSelection.equals("1")){
             board.put(1, 'O');
-            return board.get(1);
         } else if(playerSelection.equals("2")){
             board.put(3, 'O');
-            return board.get(3);
         } else if(playerSelection.equals("3")) {
             board.put(5, 'O');
-            return board.get(5);
         } else if(playerSelection.equals("4")) {
             board.put(13, 'O');
-            return board.get(13);
+
         } else if(playerSelection.equals("5")) {
             board.put(15, 'O');
-            return board.get(15);
+
         } else if(playerSelection.equals("6")) {
             board.put(17, 'O');
-            return board.get(17);
+
         } else if(playerSelection.equals("7")) {
             board.put(25, 'O');
-            return board.get(25);
+
         } else if(playerSelection.equals("8")) {
             board.put(27, 'O');
-            return board.get(27);
+
         } else if(playerSelection.equals("9")) {
             board.put(29, 'O');
-            return board.get(29);
+
         } else {
-            return ' ';
         }
     }
 
