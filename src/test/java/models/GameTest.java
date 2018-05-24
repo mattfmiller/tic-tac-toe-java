@@ -219,4 +219,24 @@ public class GameTest {
         assertEquals(expected, testGame.checkWin());
     }
 
+    @Test
+    public void checkWin_forWinOnFirstDiagonal_O() {
+        Game testGame = new Game();
+        testGame.player1turn("1");
+        testGame.player1turn("5");
+        testGame.player1turn("9");
+        Character expected = 'O';
+        assertEquals(expected, testGame.checkWin());
+    }
+
+    @Test
+    public void checkWin_forWinOnSecondDiagonal_O() {
+        Game testGame = new Game();
+        testGame.player1turn("3");
+        testGame.player1turn("5");
+        testGame.player1turn("7");
+        Character expected = 'O';
+        assertEquals(expected, testGame.checkWin());
+    }
+
 }

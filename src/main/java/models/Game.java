@@ -134,6 +134,14 @@ public class Game {
             return board.get(3);
         } else if(board.get(5) == board.get(17) && board.get(17) == board.get(29)){
             return board.get(5);
+        } else if(board.get(1) == board.get(15) && board.get(15) == board.get(29)){
+//            return board.get(15);
+            return ' ';
+
+        } else if(board.get(5) == board.get(15) && board.get(15) == board.get(25)){
+//            return board.get(15);
+            return ' ';
+
         } else  {
             return ' ';
         }
