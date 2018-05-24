@@ -127,8 +127,7 @@ public class Game {
         } else if(board.get(13) == board.get(15) && board.get(13) == board.get(17)){
             return board.get(13);
         } else if(board.get(25) == board.get(27) && board.get(29) == board.get(25)){
-//            return board.get(25);
-            return ' ';
+            return board.get(25);
         } else  {
             return ' ';
         }
