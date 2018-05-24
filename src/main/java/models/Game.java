@@ -129,14 +129,11 @@ public class Game {
         } else if(board.get(25) == board.get(27) && board.get(29) == board.get(25)){
             return board.get(25);
         } else if(board.get(1) == board.get(13) && board.get(13) == board.get(25)){
-//            return board.get(1);
-            return ' ';
-        } else if(board.get(2) == board.get(15) && board.get(15) == board.get(27)){
-//            return board.get(2);
-            return ' ';
-        } else if(board.get(3) == board.get(17) && board.get(17) == board.get(29)){
-//            return board.get(3);
-            return ' ';
+            return board.get(1);
+        } else if(board.get(3) == board.get(15) && board.get(15) == board.get(27)){
+            return board.get(3);
+        } else if(board.get(5) == board.get(17) && board.get(17) == board.get(29)){
+            return board.get(5);
         } else  {
             return ' ';
         }
