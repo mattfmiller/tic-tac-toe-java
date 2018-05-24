@@ -176,5 +176,9 @@ public class GameTest {
         assertTrue(testGame.checkDraw());
     }
 
-
+    @Test
+    public void validInput_checkUserInput_true() {
+        Game testGame = new Game();
+        assertTrue(testGame.checkInput("1"));
+    }
 }

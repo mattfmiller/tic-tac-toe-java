@@ -118,4 +118,14 @@ public class Game {
             return false;
         }
     }
+
+    public Boolean checkInput(String input){
+        if(Integer.parseInt(input) > 0 && Integer.parseInt(input) < 10){
+            return null;
+        } else {
+            return false;
+        }
+    }
+
+
 }

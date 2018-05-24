@@ -32,6 +32,20 @@ public class App {
                         programRunning = false;
                     }
                 }
+                if (game.checkDraw()) {
+                    for (Integer key : game.getBoard().keySet()) {
+                        System.out.print(game.getBoard().get(key));
+                    }
+                    System.out.println("Draw game. Would you like to play again? y/n");
+                    String userContinue = bufferedReader.readLine();
+                    if (userContinue.equals("y")) {
+                        game = new Game();
+                    } else {
+                        programRunning = false;
+                    }
+                } else {
+                    game.setTurn();
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }
