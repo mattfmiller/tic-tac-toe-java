@@ -27,6 +27,16 @@ public class App {
                     }
                 }
 
+                Boolean duplicateInput = true;
+                while (duplicateInput) {
+                    if (!game.checkForDuplicate(userInput)){
+                        duplicateInput = false;
+                    } else {
+                        System.out.println("Duplicate input. Please try again");
+                        userInput = bufferedReader.readLine();
+                    }
+                }
+
                 game.playerTurn(userInput);
                 game.switchPlayer();
                 if(game.checkWin() != ' ') {

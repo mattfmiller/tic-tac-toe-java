@@ -128,7 +128,7 @@ public class Game {
     }
 
     public Boolean checkForDuplicate(String userInput) {
-        if (!board.containsValue(userInput)) {
+        if (!board.containsValue(userInput.toCharArray()[0])) {
             return true;
         } else {
             return false;
