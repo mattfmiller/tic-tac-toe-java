@@ -70,7 +70,7 @@ public class Game {
             board.put(13, 'O');
             return board.get(13);
         } else if(playerSelection.equals("5")) {
-//            board.put(15, 'O');
+            board.put(15, 'O');
             return board.get(15);
         } else {
             return ' ';
