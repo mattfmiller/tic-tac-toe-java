@@ -36,7 +36,7 @@ public class GameTest {
     @Test
     public void player1turn_drawOonBoard_character() {
         Game testGame = new Game();
-        char expected = '0';
+        char expected = 'O';
         assertEquals(expected, testGame.player1turn("1"));
 
     }

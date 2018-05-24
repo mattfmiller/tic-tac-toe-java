@@ -58,6 +58,7 @@ public class Game {
 
     public  char player1turn(String playerSelection){
         if(playerSelection.equals("1")){
+            board.put(1, 'O');
             return board.get(1);
         } else {
             return ' ';
