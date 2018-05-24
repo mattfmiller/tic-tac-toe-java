@@ -160,11 +160,21 @@ public class GameTest {
     }
 
     @Test
-    public void checkWin_forWin_true() {
+    public void checkWin_forWinOnTopRow_O() {
         Game testGame = new Game();
         testGame.player1turn("1");
         testGame.player1turn("2");
         testGame.player1turn("3");
+        Character expected = 'O';
+        assertEquals(expected, testGame.checkWin());
+    }
+
+    @Test
+    public void checkWin_forWinOnMiddleRow_O() {
+        Game testGame = new Game();
+        testGame.player1turn("4");
+        testGame.player1turn("5");
+        testGame.player1turn("6");
         Character expected = 'O';
         assertEquals(expected, testGame.checkWin());
     }
