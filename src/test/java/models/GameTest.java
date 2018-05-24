@@ -95,4 +95,67 @@ public class GameTest {
         char expected = 'O';
         assertEquals(expected, testGame.player1turn("9"));
     }
+
+    @Test
+    public void player2turn_drawOonBoard1_X() {
+        Game testGame = new Game();
+        char expected = 'X';
+        assertEquals(expected, testGame.player1turn("1"));
+    }
+
+    @Test
+    public void player2turn_drawOonBoard2_X() {
+        Game testGame = new Game();
+        char expected = 'X';
+        assertEquals(expected, testGame.player1turn("2"));
+    }
+
+    @Test
+    public void player2turn_drawOonBoard3_X() {
+        Game testGame = new Game();
+        char expected = 'X';
+        assertEquals(expected, testGame.player1turn("3"));
+    }
+
+    @Test
+    public void player2turn_drawOonBoard4_X() {
+        Game testGame = new Game();
+        char expected = 'X';
+        assertEquals(expected, testGame.player1turn("4"));
+    }
+
+    @Test
+    public void player2turn_drawOonBoard5_X() {
+        Game testGame = new Game();
+        char expected = 'X';
+        assertEquals(expected, testGame.player1turn("5"));
+    }
+
+    @Test
+    public void player2turn_drawOonBoard6_X() {
+        Game testGame = new Game();
+        char expected = 'X';
+        assertEquals(expected, testGame.player1turn("6"));
+    }
+
+    @Test
+    public void player2turn_drawOonBoard7_X() {
+        Game testGame = new Game();
+        char expected = 'X';
+        assertEquals(expected, testGame.player1turn("7"));
+    }
+
+    @Test
+    public void player2turn_drawOonBoard8_X() {
+        Game testGame = new Game();
+        char expected = 'X';
+        assertEquals(expected, testGame.player1turn("8"));
+    }
+
+    @Test
+    public void player2turn_drawOonBoard9_X() {
+        Game testGame = new Game();
+        char expected = 'X';
+        assertEquals(expected, testGame.player1turn("9"));
+    }
 }
