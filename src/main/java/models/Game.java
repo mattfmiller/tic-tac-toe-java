@@ -110,7 +110,12 @@ public class Game {
             return ' ';
         }
     }
-//    public Boolean checkDraw() {
-//
-//    }
+
+    public Boolean checkDraw() {
+        if(turn >= 9){
+            return null;
+        } else {
+            return false;
+        }
+    }
 }

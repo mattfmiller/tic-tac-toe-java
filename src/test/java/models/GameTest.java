@@ -161,21 +161,20 @@ public class GameTest {
         assertEquals(expected, testGame.getPlayer());
     }
 
-//    @Test
-//    public void checkDraw_checkDraw_true() {
-//        Game testGame = new Game();
-//        testGame.playerTurn("2");
-//        testGame.playerTurn("3");
-//        testGame.playerTurn("4");
-//        testGame.playerTurn("5");
-//        testGame.playerTurn("9");
-//        testGame.switchPlayer();
-//        testGame.playerTurn("1");
-//        testGame.playerTurn("6");
-//        testGame.playerTurn("7");
-//        testGame.playerTurn("8");
-//        assertTrue(testGame.checkDraw());
-//    }
+    @Test
+    public void checkDraw_checkDraw_true() {
+        Game testGame = new Game();
+        testGame.setTurn();
+        testGame.setTurn();
+        testGame.setTurn();
+        testGame.setTurn();
+        testGame.setTurn();
+        testGame.setTurn();
+        testGame.setTurn();
+        testGame.setTurn();
+        testGame.setTurn();
+        assertTrue(testGame.checkDraw());
+    }
 
 
 }
