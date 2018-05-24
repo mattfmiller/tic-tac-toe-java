@@ -129,7 +129,7 @@ public class Game {
 
     public Boolean checkForDuplicate(String userInput) {
         if (!board.containsValue(userInput)) {
-            return null;
+            return true;
         } else {
             return false;
         }
