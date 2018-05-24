@@ -60,7 +60,10 @@ public class Game {
         if(playerSelection.equals("1")){
             board.put(1, 'O');
             return board.get(1);
-        } else {
+        } else if(playerSelection.equals("2")){
+//            board.put(3, 'O');
+            return board.get(3);
+        }else {
             return ' ';
         }
 

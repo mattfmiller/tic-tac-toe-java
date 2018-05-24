@@ -34,10 +34,18 @@ public class GameTest {
     }
 
     @Test
-    public void player1turn_drawOonBoard_character() {
+    public void player1turn_drawOonBoard1_O() {
         Game testGame = new Game();
         char expected = 'O';
         assertEquals(expected, testGame.player1turn("1"));
+
+    }
+
+    @Test
+    public void player1turn_drawOonBoard2_O() {
+        Game testGame = new Game();
+        char expected = 'O';
+        assertEquals(expected, testGame.player1turn("2"));
 
     }
 }
