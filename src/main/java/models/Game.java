@@ -67,7 +67,7 @@ public class Game {
             board.put(5, 'O');
             return board.get(5);
         } else if(playerSelection.equals("4")) {
-//            board.put(13, 'O');
+            board.put(13, 'O');
             return board.get(13);
         } else {
             return ' ';
