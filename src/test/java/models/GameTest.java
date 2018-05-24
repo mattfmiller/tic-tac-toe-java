@@ -179,4 +179,14 @@ public class GameTest {
         assertEquals(expected, testGame.checkWin());
     }
 
+    @Test
+    public void checkWin_forWinOnBottomRow_O() {
+        Game testGame = new Game();
+        testGame.player1turn("7");
+        testGame.player1turn("8");
+        testGame.player1turn("9");
+        Character expected = 'O';
+        assertEquals(expected, testGame.checkWin());
+    }
+
 }
