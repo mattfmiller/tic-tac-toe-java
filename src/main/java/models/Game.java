@@ -47,7 +47,12 @@ public class Game {
     public Character getPlayer1() {
         return player1;
     }
+
     public Character getPlayer2() {
         return player2;
+    }
+
+    public Map<Integer,Character> getBoard() {
+        return null;
     }
 }
