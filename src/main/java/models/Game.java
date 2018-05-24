@@ -5,10 +5,12 @@ import java.util.Map;
 
 public class Game {
     private char player;
+    private int turn;
     private Map<Integer, Character> board;
 
     public Game (){
         this.player = 'X';
+        this.turn = 1;
         this.board = new HashMap<Integer, Character>();
         board.put(1, '1');
         board.put(2, '|');
@@ -48,6 +50,10 @@ public class Game {
 
     public Map<Integer,Character> getBoard() {
         return board;
+    }
+
+    public Integer getTurn() {
+        return null;
     }
 
     public void switchPlayer() {
@@ -100,4 +106,7 @@ public class Game {
             return ' ';
         }
     }
+//    public Boolean checkDraw() {
+//
+//    }
 }
