@@ -32,4 +32,12 @@ public class GameTest {
         Map<Integer, Character> testMap = new HashMap<Integer, Character>();
         assertEquals(testMap.getClass(), testGame.getBoard().getClass());
     }
+
+    @Test
+    public void player1turn_drawOonBoard_character() {
+        Game testGame = new Game();
+        char expected = '0';
+        assertEquals(expected, testGame.player1turn("1"));
+
+    }
 }
