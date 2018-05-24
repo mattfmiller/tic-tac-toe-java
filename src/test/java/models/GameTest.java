@@ -10,4 +10,10 @@ public class GameTest {
         Game testGame = new Game();
         assertEquals(true, testGame instanceof Game);
     }
+
+    @Test
+    public void newGame_getsPlayer1_true() {
+        Game testGame = new Game();
+        assertTrue(testGame.getPlayer1() instanceof Character);
+    }
 }

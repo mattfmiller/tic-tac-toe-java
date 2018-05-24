@@ -43,4 +43,8 @@ public class Game {
         board.put(29, ' ');
         board.put(30, '\n');
     }
+
+    public Character getPlayer1() {
+        return null;
+    }
 }
