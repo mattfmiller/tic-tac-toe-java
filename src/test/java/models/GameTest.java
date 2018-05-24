@@ -189,4 +189,34 @@ public class GameTest {
         assertEquals(expected, testGame.checkWin());
     }
 
+    @Test
+    public void checkWin_forWinOnFirstColumn_O() {
+        Game testGame = new Game();
+        testGame.player1turn("1");
+        testGame.player1turn("4");
+        testGame.player1turn("7");
+        Character expected = 'O';
+        assertEquals(expected, testGame.checkWin());
+    }
+
+    @Test
+    public void checkWin_forWinOnSecondColumn_O() {
+        Game testGame = new Game();
+        testGame.player1turn("2");
+        testGame.player1turn("5");
+        testGame.player1turn("8");
+        Character expected = 'O';
+        assertEquals(expected, testGame.checkWin());
+    }
+
+    @Test
+    public void checkWin_forWinOnThirdColumn_O() {
+        Game testGame = new Game();
+        testGame.player1turn("3");
+        testGame.player1turn("6");
+        testGame.player1turn("9");
+        Character expected = 'O';
+        assertEquals(expected, testGame.checkWin());
+    }
+
 }
