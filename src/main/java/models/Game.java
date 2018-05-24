@@ -63,7 +63,10 @@ public class Game {
         } else if(playerSelection.equals("2")){
             board.put(3, 'O');
             return board.get(3);
-        }else {
+        }else if(playerSelection.equals("3")) {
+//            board.put(5, 'O');
+            return board.get(5);
+        } else {
             return ' ';
         }
 
