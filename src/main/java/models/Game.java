@@ -48,6 +48,6 @@ public class Game {
         return player1;
     }
     public Character getPlayer2() {
-        return null;
+        return player2;
     }
 }
