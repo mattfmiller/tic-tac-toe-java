@@ -123,7 +123,7 @@ public class Game {
     }
     public Character checkWin(){
         if(board.get(1) == board.get(3) && board.get(5) == board.get(3)){
-            return ' ';
+            return board.get(1);
         } else {
             return ' ';
         }
