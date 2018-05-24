@@ -82,7 +82,7 @@ public class Game {
             board.put(27, 'O');
             return board.get(27);
         } else if(playerSelection.equals("9")) {
-//            board.put(29, 'O');
+            board.put(29, 'O');
             return board.get(29);
         } else {
             return ' ';
