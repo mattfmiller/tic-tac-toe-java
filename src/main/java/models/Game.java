@@ -53,7 +53,7 @@ public class Game {
     }
 
     public Integer getTurn() {
-        return null;
+        return turn;
     }
 
     public void switchPlayer() {
