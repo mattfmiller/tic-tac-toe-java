@@ -57,7 +57,7 @@ public class Game {
     }
 
     public void setTurn() {
-
+        turn ++;
     }
 
     public void switchPlayer() {
