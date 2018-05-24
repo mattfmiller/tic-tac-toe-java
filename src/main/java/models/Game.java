@@ -135,9 +135,9 @@ public class Game {
 
     public void setPlayer() {
         if (player == 'X') {
-            player = ' ';
+            player = 'O';
         } else {
-            player = ' ';
+            player = 'X';
         }
     }
 
