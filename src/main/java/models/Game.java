@@ -56,6 +56,10 @@ public class Game {
         return turn;
     }
 
+    public void setTurn() {
+
+    }
+
     public void switchPlayer() {
         if (player == 'X') {
             player = 'O';

@@ -21,10 +21,24 @@ public class GameTest {
     }
 
     @Test
+    public void newGame_getsTurn_true() {
+        Game testGame = new Game();
+        assertTrue(testGame.getTurn() instanceof Integer);
+    }
+
+    @Test
     public void newGame_getsBoard_true() {
         Game testGame = new Game();
         Map<Integer, Character> testMap = new HashMap<Integer, Character>();
         assertEquals(testMap.getClass(), testGame.getBoard().getClass());
+    }
+
+    @Test
+    public void newGame_setTurn_1() {
+        Game testGame = new Game();
+        testGame.setTurn();
+        Integer expected = 2;
+        assertEquals(expected, testGame.getTurn());
     }
 
     @Test
@@ -162,10 +176,6 @@ public class GameTest {
 //        testGame.playerTurn("8");
 //        assertTrue(testGame.checkDraw());
 //    }
-    @Test
-    public void getTurn_instanciates_true() {
-        Game testGame = new Game();
-        assertTrue(testGame.getTurn() instanceof Integer);
-    }
+
 
 }
