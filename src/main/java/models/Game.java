@@ -53,6 +53,6 @@ public class Game {
     }
 
     public Map<Integer,Character> getBoard() {
-        return null;
+        return board;
     }
 }
