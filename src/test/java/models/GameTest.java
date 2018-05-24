@@ -74,4 +74,11 @@ public class GameTest {
         char expected = 'O';
         assertEquals(expected, testGame.player1turn("6"));
     }
+
+    @Test
+    public void player1turn_drawOonBoard7_O() {
+        Game testGame = new Game();
+        char expected = 'O';
+        assertEquals(expected, testGame.player1turn("7"));
+    }
 }

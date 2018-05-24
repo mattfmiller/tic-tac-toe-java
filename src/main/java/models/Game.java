@@ -75,6 +75,9 @@ public class Game {
         } else if(playerSelection.equals("6")) {
             board.put(17, 'O');
             return board.get(17);
+        } else if(playerSelection.equals("7")) {
+//            board.put(25, 'O');
+            return board.get(25);
         } else {
             return ' ';
         }
